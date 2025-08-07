@@ -19,8 +19,13 @@ public class TC_DWS_011_Test extends BaseClassUtility {
 		hp.getComputerslink().click();
 		Assert.assertEquals(driver.getTitle(), "Demo Web Shop. Computers","Computers page is not displayed");
 		test.log(Status.PASS, "Computers page is displayed");
+		test.log(Status.PASS, "Computers page is displayed");
+		
 		wutil.mouseHover(driver, hp.getComputerslink());
 		hp.getDesktoplink().click();
+		
+		
 	}
 
 }
+
