@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -47,7 +48,7 @@ public class BaseClassUtility {
  */
 @BeforeClass
 public void openBrowser() throws IOException {
-	driver = new EdgeDriver();
+	driver = new ChromeDriver();
 	wutil.maximize(driver);
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	
